@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Music Showtime</title>
+		<link href= "finals.css" rel="stylesheet" />
+		<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+		<meta name = "keywords" content = "music, website, yonsei" >
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8">
+
+
+	</head>
+	
+	<body>
+		
+
+  	<div class="header relative h-[300px] overflow-hidden">
+  		<video autoplay loop muted playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0">
+   			<source src="Concert Background.mp4" type="video/mp4" />
+ 		</video>
+
+  <!-- Header Content -->
+  		<div class="relative z-10 flex items-center justify-center h-full bg-black bg-opacity-0">
+    		<h1 class="large-font text-white text-center">
+      			<a href="finals.html" class="title-link">Music Showtime</a>
+    		</h1>
+  		</div>
+	</div>
+
+	<nav class = "navbar"> 
+		<ul> 
+			<li> <a href = "#top-songs">Top Songs </a></li>
+			<li> <a href = "#latest-hits">Latest Hits </a></li>
+			<li> <a href = "#hot-artists">Hot Artists </a></li>
+			<li> <a href = "#recommended-hits">Recommended Hits </a></li>
+		</ul>
+
+	</nav>
+
+	<button onclick="scrollToTop()" id="topBtn" title="Go to top">
+  		<img src="bttlogo.png" alt="Back to Top" class="top-icon">
+	</button>
+
+
+<!-- Top Songs -->
+	<div id="top-songs">
+		<h2 class = "bebas-neue-regular large-font"> Top Songs </h2>
+
+		<div class="music-row">
+  			<div class="music-box spotify">
+    			<h3>
+    				<img src="spotify-logo.png" alt="Spotify Logo" style="height: 24px; vertical-align: middle; margin-right: 8px;">
+    				Spotify 
+    			</h3>
+    				<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZEVXbNG2KDcFcKOF?utm_source=generator" width="100%" height="450" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+    					
+    				</iframe>
+    				  			
+    		</div>
+
+  			<div class="music-box applemusic">
+    			<h3>
+    				<img src="applemusic-logo.png" alt="Applemusic Logo" style="height: 24px; vertical-align: middle; margin-right: 8px;">
+    				Apple Music
+    			</h3>
+    			<iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/playlist/top-100-global/pl.d25f5d1181894928af76c85c967f8f31"></iframe>
+
+  			</div>
+
+			<div class="music-box amazonmusic">
+    			<h3>
+    				<img src="amazonmusic-logo.png" alt="Amazonmusic Logo" style="height: 24px; vertical-align: middle; margin-right: 8px;">
+    				Amazon Music
+    			</h3>
+				<iframe id='AmazonMusicEmbedB0F9PKSZB1' src='https://music.amazon.com/embed/B0F9PKSZB1/?id=pU60oDw2zI&marketplaceId=ATVPDKIKX0DER&musicTerritory=US' width='100%' height='450px' frameBorder='0' style='border-radius:20px;max-width:'></iframe>
+			</div>
+		</div>		
+	</div>
+<!-- Latest Hits -->
+	<div id="latest-hits">
+		<h2 class = "bebas-neue-regular large-font"> Latest Hits </h2>
+
+		<div class="music-row">
+  			<div class="music-box spotify">
+    			<h3>
+    				<img src="spotify-logo.png" alt="Spotify Logo" style="height: 24px; vertical-align: middle; margin-right: 8px;">
+    				Spotify 
+    			</h3>
+    				<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DXdlsL6CGuL98?utm_source=generator" width="100%" height="450" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    					
+    				</iframe>
+    				  			
+    		</div>
+
+  			<div class="music-box applemusic">
+    			<h3>
+    				<img src="applemusic-logo.png" alt="Applemusic Logo" style="height: 24px; vertical-align: middle; margin-right: 8px;">
+    				Apple Music
+    			</h3>
+    			<iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/playlist/todays-hits/pl.f4d106fed2bd41149aaacabb233eb5eb"></iframe>
+  			</div>
+
+			<div class="music-box amazonmusic">
+    			<h3>
+    				<img src="amazonmusic-logo.png" alt="Amazonmusic Logo" style="height: 24px; vertical-align: middle; margin-right: 8px;">
+    				Amazon Music
+    			</h3>
+				<iframe id='AmazonMusicEmbedB0F9R1SNJV' src='https://music.amazon.com/embed/B0F9R1SNJV/?id=elHKdy8FRb&marketplaceId=ATVPDKIKX0DER&musicTerritory=US' width='100%' height='450px' frameBorder='0' style='border-radius:20px;max-width:'></iframe>
+			</div>
+		</div>
+
+<!-- Hot Artists -->
+	<div id="hot-artists">
+		<h2 class = "bebas-neue-regular large-font"> Hot Artists </h2>
+
+		<div class="artist-container">
+		  <div class="artist-track">
+		
+		    <div class="album-item">
+		    	<a href = "https://open.spotify.com/artist/1U1el3k54VvEUzo3ybLPlM" target="_blank">
+		      <img src="kali.png" alt="Kali Cover" class="album-cover">
+		      	</a>
+		      <h3>Kali Uchis</h3>
+		      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0JmnkIqdlnUzPaf8sqBRs3?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+		    </div>
+		
+		    <div class="album-item">
+		    	<a href = "https://open.spotify.com/artist/22wbnEMDvgVIAGdFeek6ET" target="_blank">
+		      <img src="benson.png" alt="Benson Cover" class="album-cover">
+		  		</a>
+		      <h3>Benson Boone</h3>
+		      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3xkHsmpQCBMytMJNiDf3Ii?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+		    </div>
+		
+		    <div class="album-item">
+		    	<a href = "https://open.spotify.com/artist/4E2rKHVDssGJm2SCDOMMJB" target="_blank">
+		      <img src="doechii.png" alt="Doechii Cover" class="album-cover">
+		      	</a>
+		      <h3>Doechii</h3>
+		      	<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3LPLRNr58Z9Pn0clnEtkXb?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+		    </div>
+		
+		    <div class="album-item">
+		    	<a href = "https://open.spotify.com/artist/4oUHIQIBe0LHzYfvXNW4QM" target="_blank">
+		      <img src="morgan.png" alt="Morgan Cover" class="album-cover">
+		      	</a>
+		      <h3>Morgan Wallen</h3>
+		      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5IZXB5IKAD2qlvTPJYDCFB?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+		    </div>
+
+		    <div class="album-item">
+		    	<a href = "https://open.spotify.com/artist/6qqNVTkY8uBg9cP3Jd7DAH" target="_blank">
+		      <img src="billie.png" alt="Billie Cover" class="album-cover">
+		      	</a>
+		      <h3>Billie Eilish</h3>
+		      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6dOtVTDdiauQNBQEDOtlAB?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+		    </div>
+
+		
+		  </div>
+		</div>
+	</div>
+<!-- Recommended Hits -->
+	<div id="recommended-hits">
+		<h2 class = "bebas-neue-regular large-font"> Recommended Hits </h2>
+
+		<div class="weather-section min-h-screen flex items-center justify-center">
+  			<div class="bg-white p-8 rounded-2xl shadow-lg w-full max-w-md text-center ">
+    		<h1 class="text-2xl font-bold mb-4">Weather Music Mood</h1>
+    		<input type="text" id="location" placeholder="Enter your city" class="border p-2 w-full rounded mb-4">
+    		<button onclick="getWeatherAndMusic()" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-transform transform hover:scale-105">Get Weather & Music</button>
+    		<div id="weather" class="mt-4 text-lg font-medium text-gray-800"></div>
+    		<div id="music" class="mt-6"></div>
+  		</div>
+	</div>
+
+
+
+<script src="finals.js"></script>
+	</body>
+
+
+</html>

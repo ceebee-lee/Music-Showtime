@@ -1,0 +1,262 @@
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.header { 
+  padding: 10px;
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  width: 100%;
+  padding-bottom: 80px;
+  padding-top: 80px
+  
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #222;
+  padding: 10px 0;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 50px; 
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar a{
+  font-size: 30px;
+  font-family: "Bebas Neue", sans-serif;
+  text-decoration: none;
+  color: white;
+  display: block;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.navbar a:hover {
+  transform: scale(1.1);
+}
+
+#topBtn {
+  position: fixed;
+  bottom: 40px;
+  right: 30px;
+  z-index: 100;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.top-icon {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s;
+}
+
+#topBtn:hover .top-icon {
+  transform: scale(1.1);
+}
+
+body{
+  background-color: rgba(66, 73, 73);
+}
+.weather-section {
+  background-color: rgba(66, 73, 73);
+}
+
+.large-font {
+  font-size: 70px;
+}
+
+.medium-font {
+  font-size: 30px;
+}
+
+.title-link {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  transform: scale(1);
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.title-link:hover {
+  transform: scale(1.1);
+  color: #ffcc00; /* Optional hover color */
+}
+
+html, body {
+  height: 100%;
+  margin: 5px;
+  padding: 0;
+}
+
+h2 {
+
+  color:white;
+}
+
+
+h4{
+  font-size: 10px;
+}
+
+.music-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 15px;
+}
+
+.music-box h3{
+  font-size: 40px;
+}
+
+.music-box {
+  flex: 1;
+  padding: 15px;
+  background-color: rgba(0,0,0,0.1);
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  overflow: auto;
+  font-family: Bebas Neue;
+  color:white;
+}
+
+.applemusic,
+.spotify,
+.amazonmusic {
+  background-color: rgba(249, 249, 246, 0.3);
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.artist-container {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  padding: 10px;
+  scroll-behavior: smooth;
+  display: flex;
+}
+
+
+.artist-track {
+  display: flex;
+  gap: 50px; 
+  transition: transform 0.5s ease-in-out;
+
+}
+
+
+.album-cover {
+  height: 180px;
+  width: auto;
+  border-radius: 12px;
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease;
+  margin-bottom: 8px;
+}
+
+.album-cover:hover {
+  transform: scale(1.05);
+}
+
+.album-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 150px;
+}
+
+.album-item h3 {
+  color: white;
+  font-family: "Bebas Neue", sans-serif;
+  margin: 0;
+  text-align: center;
+  font-size: 40px;
+}
+
+
+@media screen and (max-width: 800px) {
+  .large-font {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .medium-font {
+    font-size: 20px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .navbar a {
+    font-size: 24px;
+  }
+
+  .music-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .music-box {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .artist-container {
+    flex-direction: column;
+    align-items: center;
+    white-space: normal; 
+    overflow-x: visible;
+  }
+
+
+  .artist-track {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin: 0 auto;
+  }
+
+  .album-cover {
+    height: 150px;
+  }
+
+  h2, h3 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .top-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  #topBtn {
+    bottom: 20px;
+    right: 20px;
+  }
+
+  body {
+    padding: 0 10px;
+  }
+}
